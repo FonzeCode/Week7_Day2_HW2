@@ -28,6 +28,24 @@ toCelcius(50);
     Create an instance of the new user and then change their password using the method.
 */
 
+class User {
+    constructor(name, password){
+        this.name = name
+        this.password = password
+    }
+    changePass(oldPass, newPass){
+        if(oldPass !== this.password){
+        console.log('The password is incorrect')
+        return;
+         }
+    console.log('New Password')
+    }
+}
+
+let user = new User('Luis', 'abc123')
+user.changePass('abc', 'abc2023')
+user.changePass('abc123', 'abc2023')
+
 
 
 // let user1 = new User('brians', 'abc123');
